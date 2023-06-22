@@ -29,11 +29,5 @@ jobs:
     - name: "📀 building"
       run: bundle exec rake transform:icons
 
-    - name: "🚦 upload artifact"
-      uses: actions/upload-artifact@v3
-      with:
-        name: phosphoricons-build
-        path: ./lib/build
-
     - name: "🔍 run tests"
       run: bundle exec rake
