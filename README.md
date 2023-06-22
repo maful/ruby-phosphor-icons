@@ -4,6 +4,13 @@
 
 # Ruby Phosphor Icons
 
+<a href="https://github.com/maful/ruby-phosphor-icons/actions?query=workflow%3ACI">
+  <img src="https://github.com/maful/ruby-phosphor-icons/actions/workflows/ci.yml/badge.svg" alt="Tests">
+</a>
+<a href="https://rubygems.org/gems/phosphor_icons">
+  <img src="https://img.shields.io/gem/v/phosphor_icons" alt="Latest Stable Version">
+</a>
+
 A gem to easily include [Phosphor Icons](https://phosphoricons.com) in your Ruby and Rails apps.
 
 For a full list of available icons see [the assets directory](https://github.com/phosphor-icons/core/tree/c67d7a849f450be1bfe64fd5820471e4019e5ff0/assets) or preview them at [phosphoricons.com](https://phosphoricons.com/).
@@ -18,6 +25,12 @@ Install the gem and add to the application's Gemfile by executing:
 
 ```sh
 bundle add phosphor_icons
+```
+
+or add this in your Gemfile
+
+```rb
+gem "phosphor_icons"
 ```
 
 ## Usage
