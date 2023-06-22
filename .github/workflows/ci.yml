@@ -17,6 +17,8 @@ jobs:
     steps:
     - name: "☁️ checkout repository"
       uses: actions/checkout@v3
+      with:
+        submodules: true
 
     - name: "📦 install dependencies"
       uses: ruby/setup-ruby@v1
