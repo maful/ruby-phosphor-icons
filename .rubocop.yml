@@ -1,0 +1,6 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7

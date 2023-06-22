@@ -1,0 +1,4 @@
+[submodule "core"]
+	path = core
+	url = git@github.com:phosphor-icons/core.git
+  branch = main

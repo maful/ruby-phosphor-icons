@@ -1,0 +1,23 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+## Vendored and built gems
+.bundle
+vendor/
+phosphor_icons*.gem
+
+# MacOS system files
+.DS_Store
+
+# Files for version managers
+.ruby-version
+.tool-versions
+
+# Ignore build/export artifacts
+lib/**/build/
