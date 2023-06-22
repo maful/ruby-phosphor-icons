@@ -7,8 +7,7 @@ require "rubocop/rake_task"
 Rake.add_rakelib("lib/tasks")
 
 Rake::TestTask.new(:test) do |t|
-  t.libs << "test"
-  t.libs << "lib"
+  t.libs = ["lib", "test"]
   t.test_files = FileList["test/**/test_*.rb"]
 end
 

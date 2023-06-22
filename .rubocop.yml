@@ -3,4 +3,8 @@ inherit_gem:
 
 AllCops:
   NewCops: enable
+  SuggestExtensions: false
   TargetRubyVersion: 2.7
+
+Gemspec/OrderedDependencies:
+  Enabled: false

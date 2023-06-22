@@ -4,7 +4,7 @@
 
 # Ruby Phosphor Icons
 
-A gem to easily make use of [Phosphor Icons](https://phosphoricons.com) in Ruby and Rails apps.
+A gem to easily include [Phosphor Icons](https://phosphoricons.com) in your Ruby and Rails apps.
 
 For a full list of available icons see [the assets directory](https://github.com/phosphor-icons/core/tree/c67d7a849f450be1bfe64fd5820471e4019e5ff0/assets) or preview them at [phosphoricons.com](https://phosphoricons.com/).
 
@@ -28,6 +28,12 @@ require "phosphor_icons"
 icon = PhosphorIcons::Icon.new("alarm")
 icon.to_svg
 # <svg class="phosphor-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M128,32a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,32Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,208ZM61.66,29.66l-32,32A8,8,0,0,1,18.34,50.34l32-32A8,8,0,1,1,61.66,29.66Zm176,32a8,8,0,0,1-11.32,0l-32-32a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,237.66,61.66ZM184,120a8,8,0,0,1,0,16H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48Z"/></svg>
+```
+
+If you are using Ruby on Rails, you can use `phosphor_icon` helper in your views directly
+
+```erb
+<%= phosphor_icon "alarm", class: "h-5 w-5 %>
 ```
 
 ## Documentation

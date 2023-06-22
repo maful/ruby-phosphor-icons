@@ -21,5 +21,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{lib}/**/*"] + ["LICENSE", "README.md"]
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency("ox", "~> 2.14")
+  spec.add_dependency("ox", "~> 2.14")
+  spec.add_dependency("railties")
+  spec.add_dependency("actionview")
 end

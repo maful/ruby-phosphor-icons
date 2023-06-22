@@ -2,6 +2,8 @@
 
 require "phosphor_icons/version"
 require "phosphor_icons/icon"
+require "phosphor_icons/helper"
+require "phosphor_icons/railtie" if defined?(Rails)
 require "json"
 
 module PhosphorIcons
