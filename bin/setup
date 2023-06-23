@@ -3,4 +3,14 @@ set -euo pipefail
 IFS=$'\n\t'
 set -vx
 
+# initialize local configuration file
+git submodule init
+
+# fetch all the submodules
+git submodule update
+
+# install the dependencies
 bundle install
+
+# build svgs to json object
+bundle exec rake transform:icons
