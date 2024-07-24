@@ -21,3 +21,5 @@ phosphor_icons*.gem
 
 # Ignore build/export artifacts
 lib/**/build/
+
+Gemfile.lock
