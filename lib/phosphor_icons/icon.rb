@@ -17,7 +17,7 @@ module PhosphorIcons
         @width = phosphor_icon["width"]
         @height = phosphor_icon["height"]
         @options = {
-          class: "phosphor-icon #{options[:class]}".strip,
+          class: "phosphor-icon #{extract_class(options[:class])}".strip,
           viewBox: viewbox,
           xmlns: "http://www.w3.org/2000/svg",
           fill: "currentColor",
@@ -43,6 +43,12 @@ module PhosphorIcons
       attrs = ""
       options.each { |attr, value| attrs += "#{attr}=\"#{value}\" " }
       attrs.strip
+    end
+
+    def extract_class(option)
+      return option unless option.is_a? Array
+
+      option.join(' ')
     end
 
     def viewbox

@@ -46,6 +46,11 @@ class TestPhosphorIcons < Minitest::Test
     assert_includes(icon.to_svg, "class=\"phosphor-icon foo\"")
   end
 
+  def test_accepts_an_array_for_classes
+    icon = phosphor_icon(:alarm, class: %w[foo bar])
+    assert_includes(icon.to_svg, 'class="phosphor-icon foo bar"')
+  end
+
   def test_default_height
     icon = phosphor_icon(:alarm)
     assert_equal(24, icon.height)
